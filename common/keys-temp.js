@@ -25,7 +25,7 @@ module.exports = {
       Host: "localhost",
       Username: "root",
       Password: "root",
-      Name: "dawicoin_node",
+      Name: "vivitabase_node",
       Port: "8889",
     },
     LocalNode:{

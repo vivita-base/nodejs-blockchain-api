@@ -31,7 +31,7 @@ try {Keys = require("./common/keys");} catch (e) {} // load Keys if the file is 
   }
 
   server.listen(process.env.PORT || port, () => {
-    console.log(`Dawicoin Node listening port:${process.env.PORT || port} env:${Config.Env}`);
+    console.log(`VIVITA BASE Node listening port:${process.env.PORT || port} env:${Config.Env}`);
     AutoStart.run();
   });
 })();

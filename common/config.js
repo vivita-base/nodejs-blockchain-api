@@ -46,16 +46,6 @@ if (
   Config.Env = Environment;
 }
 
-if(Environment === EnvironmentEnum.Release){
-  Config.FrontEnd.AppName = "Asurcoin Node";
-  Config.Database.LocalNode.Name = 'local_node_asurcoin';
-}
-
-if(Environment === EnvironmentEnum.Production){
-  Config.FrontEnd.AppName = "Dawicoin Node";
-  Config.Database.LocalNode.Name = 'local_node_dawicoin';
-}
-
 module.exports = (async () => {
   return { Config, EnvironmentEnum, Settings };
 })();
