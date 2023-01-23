@@ -1,0 +1,22 @@
+let transaction = {
+  "blockHash":"0x220f716126eec3093d64f5df6234f8e13b8b9f1d3a362f4dc99fbbbba72f346b",
+  "blockNumber":16145146,
+  "chainId":"0x1",
+  "from":"0x6238872a0bd9f0e19073695532a7ed77ce93c69e",
+  "gas":200000,
+  "gasPrice":"20718543232",
+  "hash":"0xc018fe4df92610b2cd059f38fc9ed2ca428b396826053684b46146d03589fd24",
+  "input":"0x40c10f190000000000000000000000006238872a0bd9f0e19073695532a7ed77ce93c69e0000000000000000000000000000000000000000000000000000002c113a5b59",
+  "nonce":214685,
+  "r":"0xd7d52ebe65aeec99739beecbba6e3a68d846847436f840cf0d62c8ac984cabb3",
+  "s":"0x6517eccad0806aacaa9f446f40fb84badde6eb53afcac0fcb120afc0aa0c7383",
+  "to":"0x2a036569dbbe7730d69ed664b74412e49f43c2c0",
+  "transactionIndex":1,
+  "type":"0x0",
+  "v":"0x26",
+  "value":"0"
+}
+
+let decodedInput = {
+  
+}
