@@ -37,14 +37,14 @@ module.exports = (async() => {
       // d.res = r.res;
 
 
-      // === Create a Wallet using Seed Phrase
-      let coinNode = CoinNodesEnum.BTC.Coin;
-      let height = 766390;
-      // let coinNode = CoinNodesEnum.DOGE.Coin;
-      // let height = 4505709;
-      r = await Dawicore.getBlockByHeight(coinNode,height);
-      if(r.err.code) return r;
-      d.res = r.res;
+      // // === Create a Wallet using Seed Phrase
+      // let coinNode = CoinNodesEnum.BTC.Coin;
+      // let height = 766390;
+      // // let coinNode = CoinNodesEnum.DOGE.Coin;
+      // // let height = 4505709;
+      // r = await Dawicore.getBlockByHeight(coinNode,height);
+      // if(r.err.code) return r;
+      // d.res = r.res;
 
 
       return d;
