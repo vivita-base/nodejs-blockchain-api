@@ -39,10 +39,10 @@ module.exports = (async () => {
       if(options.hdPrivateKeyStr){
         xprivStr = options.hdPrivateKeyStr
       }else{
-        let memPhrase = (options.mnemonicPhrase)?options.mnemonicPhrase:new Mnemonic(Mnemonic.Words.ENGLISH).toString();
-        newMnemonicPhrase = (options.mnemonicPhrase)?null:memPhrase
-        const code = new Mnemonic(options.mnemonicPhrase)
-        const xpriv = code.toHDPrivateKey((options.mnemPassPhrase)?options.mnemPassPhrase:undefined);
+        let memPhrase = (options.seedPhrase)?options.seedPhrase:new Mnemonic(Mnemonic.Words.ENGLISH).toString();
+        newMnemonicPhrase = (options.seedPhrase)?null:memPhrase
+        const code = new Mnemonic(options.seedPhrase)
+        const xpriv = code.toHDPrivateKey((options.passPhrase)?options.passPhrase:undefined);
         xprivStr = xpriv.toString();
       } 
 

@@ -12,7 +12,7 @@ module.exports = (async () => {
       const sock = zmq.socket('sub');
       const addr = 'tcp://127.0.0.1:'+port;
 
-      Block.blockCheck(coin);
+      // Block.blockCheck(coin);
       
       const startSocket = () => {
         let timenow = new Date();
@@ -23,12 +23,15 @@ module.exports = (async () => {
           lastSocketTimeUpdate = new Date().getTime();
           try{
             if (topic.toString() === 'rawtx') {
-              const rawTx = message.toString('hex');
-              Transaction.transactionCheck(coin,rawTx);          
+              // console.log("Transaction Added",coin);
+              // const rawTx = message.toString('hex');
+              // console.log("rawTx",rawTx);
+              // Transaction.transactionCheck(coin,rawTx);          
             }
   
             if (topic.toString() === 'rawblock') {
-              Block.blockCheck(coin);
+              // console.log("Block Updated",coin);
+              // Block.blockCheck(coin);
             }
           }catch(err){
             console.log("err",err);

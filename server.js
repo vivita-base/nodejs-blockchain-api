@@ -14,14 +14,17 @@ try {Keys = require("./common/keys");} catch (e) {} // load Keys if the file is 
   const ZeromqHandlder = await require('./handlers/zeromq');
 
   console.log("Keys.Coins",Keys.Coins);
+  let coins = [];
+  for (let i = 0; i < Keys.Coins.length; i++) {
+    coins.push(Keys.Coins[i].Coin);
+  }
   for(let key in CoinNodesEnum){
     let CoinNodeEnum = CoinNodesEnum[key];
 
     if(CoinNodeEnum.Network !== "Regular"){
       continue;
     }
-
-    if(Keys.Coins.indexOf(key) === -1){
+    if(coins.indexOf(key) === -1){
       console.log("skipping",key);
       continue;
     }
